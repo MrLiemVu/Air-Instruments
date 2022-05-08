@@ -1,3 +1,5 @@
+# From https://filterpy.readthedocs.io/en/latest/kalman/KalmanFilter.html
+# Github Repo with a bunch of different tiypes of filters we can explore: https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python
 from filterpy.kalman import KalmanFilter
 from filterpy.common import Q_discrete_white_noise
 
