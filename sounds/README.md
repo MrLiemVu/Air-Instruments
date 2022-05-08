@@ -1,4 +1,4 @@
-### Sounds
+# Sounds
 Planned Sounds Used
 * Snares
 * Hi-Tom
