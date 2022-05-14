@@ -51,8 +51,8 @@ void setup() {
 
   //*********************************************************************
   //*************NOW LET'S START MEASURING*******************************
-void loop() 
-{ 
+void loop() {
+   mpu6050.update();
    tcaselect(0);
    Serial.print(MPU6050_01.getAccX());
    Serial.print("\t ");Serial.print(MPU6050_01.getAccY());
