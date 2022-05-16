@@ -7,3 +7,8 @@ We may use the filterpy repo for implementing an easy kalman filter or utilize t
 ```
 pip install filterpy
 ```
+We may want to use some libraries for playing our own sounds.
+```
+pip install pyaudio
+pip install wave
+```
