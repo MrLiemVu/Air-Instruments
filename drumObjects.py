@@ -1,6 +1,4 @@
 import sounds
-import pyaudio  
-import wave  
 
 class drumset:
   def __init__(self, sound, x=0, y=0, z=0, radius=5):
