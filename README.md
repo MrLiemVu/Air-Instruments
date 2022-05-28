@@ -12,3 +12,8 @@ We may want to use some libraries for playing our own sounds.
 pip install pyaudio
 pip install wave
 ```
+To get bluetooth to work we may need to do
+```
+pip install pyserial
+pip install pybluez
+```
