@@ -9,8 +9,7 @@ pip install filterpy
 ```
 We may want to use some libraries for playing our own sounds.
 ```
-pip install pyaudio
-pip install wave
+pip install pygame
 ```
 To get bluetooth to work we may need to do
 ```
