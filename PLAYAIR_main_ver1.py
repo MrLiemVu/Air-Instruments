@@ -31,42 +31,42 @@ while True:
     acc_decode = ser.readline().decode()
 #     acc_num_list = list(map(float, acc_decode.split()))
 #     print(acc_num_list)
-    if acc_decode[0] == '1':
+    if acc_decode[0:2] == '01':
         crash1.play()
-    elif acc_decode[0] == '2':
+    elif acc_decode[0:2] == '02':
         crash2.play()
-    elif acc_decode[0] == '3':
+    elif acc_decode[0:2] == '03':
         tom1.play()
-    elif acc_decode[0] == '4':
+    elif acc_decode[0:2] == '04':
         tom2.play()
-    elif acc_decode[0] == '5':
+    elif acc_decode[0:2] == '05':
         snare1.play()
-    elif acc_decode[0] == '6':
+    elif acc_decode[0:2] == '06':
         snare2.play()
-    elif acc_decode[0] == '7':
+    elif acc_decode[0:2] == '07':
         ride1.play()
-    elif acc_decode[0] == '8':
+    elif acc_decode[0:2] == '08':
         ride2.play()
-    elif acc_decode[0] == '9':
+    elif acc_decode[0:2] == '09':
         sdst.play()
-    elif acc_decode[0] == '10':
+    elif acc_decode[0:2] == '10':
         cihat.play()
-    elif acc_decode[0] == '11':
+    elif acc_decode[0:2] == '11':
         hfhat.play()
-    elif acc_decode[0] == '12':
+    elif acc_decode[0:2] == '12':
         ophat.play()
-    elif acc_decode[0] == '13':
+    elif acc_decode[0:2] == '13':
         pdhat.play()
     time.sleep(0.2)
     
 # Maybe faster using dict and cleaner code
-# soundFiles = {'1': crash1, '2': crash2, '3': tom1, '4': tom2, '5': snare1, '6': snare2,
-#               '7': ride1, '8': ride2, '9': sdst, '10': cihat, '11': hfhat, '12': ophat, '13': pdhat
+# soundFiles = {'01': crash1, '02': crash2, '03': tom1, '04': tom2, '05': snare1, '06': snare2,
+#               '07': ride1, '08': ride2, '09': sdst, '10': cihat, '11': hfhat, '12': ophat, '13': pdhat
 #              }
 # while True:
 #     data = ser.readline().decode()
-#     if data[0] != 0:
-#         soundFiles[data[0]].play()
+#     if data[0:2] != '00':
+#         soundFiles[data[0:2]].play()
 #     time.sleep(0.2)
 
 #with serial.Serial('COM8', 9600, timeout=0) as ser:
