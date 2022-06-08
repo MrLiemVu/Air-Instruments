@@ -59,6 +59,16 @@ while True:
         pdhat.play()
     time.sleep(0.2)
     
+# Maybe faster using dict and cleaner code
+# soundFiles = {'1': crash1, '2': crash2, '3': tom1, '4': tom2, '5': snare1, '6': snare2,
+#               '7': ride1, '8': ride2, '9': sdst, '10': cihat, '11': hfhat, '12': ophat, '13': pdhat
+#              }
+# while True:
+#     data = ser.readline().decode()
+#     if data[0] != 0:
+#         soundFiles[data[0]].play()
+#     time.sleep(0.2)
+
 #with serial.Serial('COM8', 9600, timeout=0) as ser:
 #    line = ser.readline()
 #    line_decode = line.decode()
